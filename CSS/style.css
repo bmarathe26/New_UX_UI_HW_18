@@ -1,0 +1,187 @@
+body {
+    background: linear-gradient(to top, white,white, white, #e28743);
+}
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  /* Style the navigation options */
+.navigationMenu {
+    /* background: white;*/
+       border-style:groove;
+       background: linear-gradient(to top, white, #e28743);
+       box-shadow: 0px, 0px, 12px, var(--clr-gray100);
+     margin:0;
+     padding: 1rem 0;
+     border-radius: 40px;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+   }
+
+   
+   .navigationMenu li {
+    list-style: none;/* To remove bullet points */
+    margin-right: 2rem; /*breathing space btw each element*/
+  }
+
+  .navigationMenu a {
+    text-decoration: none;
+    color: black;
+  }
+  .LOGO:first-child:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.LOGO img {
+   width: 90px; 
+  height: 90px;
+  padding-right: 5px;
+}
+/* Style the "Let's Connect" button */
+.connect_button {
+    background-color:grey;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+
+
+#intro {
+display:inline-block;
+justify-content: center;
+text-align: justify;
+}
+
+.myWork {
+   /* background-color: #f8f8f8;*/
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.myWork h1 {
+   /* font-size: 36px;
+    margin-bottom: 20px;
+    align-content: left;*/
+    display: flex;
+    justify-content: left;
+}
+
+.horizontal-line {
+    border-bottom: 2px solid gray; /* Change the color and thickness as needed */
+    margin: 20px 0;/* Adjust the margin as needed for spacing */
+}
+
+.myWork .workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.myWork .workGrid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.left {
+    width: 500px; /* Set the width of the card */
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.left img {
+    width: 100%; /* Make the image fill the width of the card */
+    height: 100%; /* Maintain the aspect ratio */
+}
+
+.right {
+    text-align: justify;
+}
+
+.myWork h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.myWork button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.myWork button:hover {
+    background-color: #2980b9;
+}
+/* Footer Styles */
+.footer {
+    justify-content: center;
+    align-items: center;
+   /* background: white;*/
+    background: linear-gradient(to top,white, #e28743);
+    text-decoration: none;
+    color:black;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    width: 99%;
+  }
+  .footercontent {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* Adjust the navigation menu */
+    .navigationMenu {
+      justify-content: center;
+      padding: 10px 0; /* Reduce vertical padding */
+    }
+    .navigationMenu li {
+      margin-right: 1rem;
+    }
+    .LOGO:first-child:first-child {
+      margin-left: 1rem;
+    }
+    /* Adjust the introduction section */
+  #intro {
+    text-align: center;
+    margin-top: 10px;
+  }
+   /* Adjust the project grids */
+   .myWork .workGrid,
+   .myWork .workGrid2 {
+     grid-template-columns: 1fr; /* Single column grid */
+   }
+   /* Adjust the footer */
+  .footer {
+    height: auto; /* Allow content to determine height */
+    flex-direction: column;
+  }
+
+  .footercontent {
+    margin: 5px 0; /* Reduce vertical margin */
+  }
+  }  
+  
+  
+
+
+
+ 
